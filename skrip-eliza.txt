@@ -18,6 +18,8 @@ post: dirimu diriku
 post: kamu aku
 post: kau aku
 post: milikku milikmu
+post: ku mu
+post: mu ku
 
 synon: adalah ialah merupakan
 synon: keluarga ibu mama ayah papa saudara istri anak-anak anak bapak mamah papah kakak adik keluarganya ibunya mamanya ayahnya papanya saudaranya istrinya anaknya bapaknya mamahnya papahnya kakaknya adiknya anak-anaknya
