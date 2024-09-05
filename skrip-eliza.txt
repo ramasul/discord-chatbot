@@ -1,0 +1,362 @@
+initial: Kamu nggak apa apa? Tolong certain aja kalau ada masalah.
+final: Okee, Makasih ya udah ngobrol denganku.
+quit: bye
+quit: selamat tinggal
+quit: keluar
+
+pre: mengenang mengingat
+pre: kenang ingat
+pre: dikenang diingat
+pre: mesin komputer
+pre: serupa sama
+
+post: aku kamu
+post: saya kamu
+post: daku kamu
+post: diriku dirimu
+post: dirimu diriku
+post: kamu aku
+post: kau aku
+post: milikku milikmu
+
+synon: adalah ialah merupakan
+synon: keluarga ibu mama ayah papa saudara istri anak-anak anak bapak mamah papah kakak adik keluarganya ibunya mamanya ayahnya papanya saudaranya istrinya anaknya bapaknya mamahnya papahnya kakaknya adiknya anak-anaknya
+synon: ingin keinginan butuh menginginkan diinginkan inginnya mau akan pengen
+synon: ingat kenang mengenang mengingat dikenang diingat inget mengingatkanku mengingatkan
+synon: sedih depresi sakit murung badmood nangis menangis stress stres
+synon: senang gembira bahagia baik seneng
+synon: adalah ialah merupakan
+synon: komputer computer
+synon: saya aku saya diriku daku hamba
+synon: kamu kau anda dirimu kamunya
+synon: tidak nggak ga gk ndak gak bukan no salah
+synon: apa apakah bagaimana gimana apanya
+synon: mengapa kenapa napa
+synon: karena karna soalnya habisnya
+synon: semua semuanya seluruh seluruhnya
+synon: orang manusia masyarakat rakyat warga
+synon: jika andai misalnya misal andaikan misalkan kalau
+synon: pada dengan
+synon: halo hai hi helo pagi siang sore malam
+synon: ya yap yak iya yup benar betul yes
+synon: bisa dapat bisakah dapatkah
+synon: selalu sering seringkali
+synon: dapatkah bisa dapat bisakah
+
+key: xnone
+  decomp: *
+    reasmb: Aku nggak sepenuhnya memahami apa yang kamu maksud.
+    reasmb: Silakan lanjut.
+    reasmb: Lanjut aja.
+    reasmb: Apa maksud dari hal itu menurutmu?
+    reasmb: Apakah kamu nggak apa-apa membicarakan hal-hal seperti ini?:smiling_face_with_tear: 
+    reasmb: Ohh... Iya iya :thinking:.
+    reasmb: Huum, lanjut.
+
+key: maaf
+  decomp: *
+    reasmb: Eh, nggak perlu meminta maaf. Santai aja.
+    reasmb: Tolong jangan minta maaf, lanjut aja.
+    reasmb: Nggak perlu minta maaf ya, lanjut aja.
+
+key: ingat 5
+  decomp: * @saya @ingat *
+    reasmb: Apakah kamu sering memikirkan (4) ?
+    reasmb: Apakah memikirkan (4) membawamu ke hal lain?
+    reasmb: Apa lagi yang kamu ingat?
+    reasmb: Mengapa kamu sedang mengingat (4) sekarang?
+    reasmb: Apa yang sedang terjadi yang mengingatkanmu pada (4) ?
+    reasmb: Apa hubungannya antara aku dan (4) ?
+  decomp: * @apa @kamu @ingat *
+    reasmb: Apakah kamu pikir aku akan lupa (5) ?
+    reasmb: Mengapa kamu berpikir aku harus mengingat (5) sekarang?
+    reasmb: Bagaimana dengan (5) ?
+    reasmb: goto apa
+    reasmb: Kamu menyebutkan (5) ?
+
+key: jika 3
+  decomp: * @jika *
+    reasmb: Apakah menurutmu mungkin bahwa (3) ?
+    reasmb: Apakah kamu berharap bahwa (3) ?
+    reasmb: Apa yang kamu ketahui tentang (3) ?
+    reasmb: Seriusan, (2) (3) ?
+
+key: andai 3
+  decomp: *
+    reasmb: goto jika
+
+key: misal 3
+  decomp: *
+    reasmb: goto jika
+
+key: kalau 3
+  decomp: *
+    reasmb: goto jika
+
+key: misalkan 3
+  decomp: *
+    reasmb: goto jika
+
+key: bermimpi 4
+  decomp: * @saya bermimpi *
+    reasmb: Serius, kamu bermimpi (4) ?
+    reasmb: Apakah kamu pernah berfantasi (4) saat lagi sadar?
+    reasmb: Apakah kamu pernah bermimpi (4) sebelumnya?
+    reasmb: goto mimpi
+
+key: mimpi 3
+  decomp: *
+    reasmb: Apa yang ada di mimpi itu?
+    reasmb: Apakah kamu sering bermimpi?
+    reasmb: Siapa yang muncul dalam mimpimu?
+    reasmb: Apakah kamu percaya bahwa mimpi itu ada hubungannya dengan masalahmu?
+
+key: mungkin
+  decomp: *
+    reasmb: Kamu sepertinya nggak terlalu yakin.
+    reasmb: Kenapa kamu terdengar ragu-ragu soal itu?
+    reasmb: Apakah kamu bisa lebih pasti?
+    reasmb: Kamu nggak yakin?
+    reasmb: Apakah kamu nggak tahu?
+
+key: nama 15
+  decomp: *
+    reasmb: Aku nggak tertarik dengan nama.
+    reasmb: Sudah kubilang, aku nggak peduli dengan nama -- lanjut saja.
+
+key: jerman
+  decomp: *
+    reasmb: goto xasing
+    reasmb: Sudah kubilang, aku nggak paham bahasa Jerman.
+
+key: prancis
+  decomp: *
+    reasmb: goto xasing
+    reasmb: Sudah kubilang, aku nggak paham bahasa Perancis.
+
+key: italia
+  decomp: *
+    reasmb: goto xasing
+    reasmb: Sudah kubilang, aku nggak paham bahasa Italia.
+
+key: spanyol
+  decomp: *
+    reasmb: goto xasing
+    reasmb: Sudah kubilang, aku nggak paham bahasa Spanyol.
+
+key: xasing
+  decomp: *
+    reasmb: Aku hanya bisa Bahasa Indonesia.
+
+key: halo
+  decomp: * @halo *
+    reasmb: Hai hai~ :innocent:. Sangat boleh kalau mau certain masalahmu.
+    reasmb: Ehh haaai. Pengen ngobrol?
+    reasmb: (2) !! Ada yang ingin dibicarakan?
+
+key: hai
+  decomp: *
+    reasmb: goto halo
+
+key: komputer 50
+  decomp: *
+    reasmb: Apakah komputer membuatmu khawatir?
+    reasmb: Kenapa kamu menyebutkan komputer?
+    reasmb: Kenapa menurutmu komputer ada hubungannya dengan masalahmu?
+    reasmb: Apakah kamu berpikir komputer tidak bisa membantu orang banyak?
+    reasmb: Apa yang membuatmu khawatir tentang komputer?
+    reasmb: Apa pendapatmu tentang komputer?
+
+key: saya
+  decomp: * @saya @ingin *
+    reasmb: Apa arti (4) bagimu jika kamu mendapatkannya?
+    reasmb: Mengapa kamu menginginkan (4) ?
+    reasmb: Bagaimana jika kamu mendapatkan (4) dalam waktu dekat?
+    reasmb: Bagaimana jika kamu tidak pernah mendapatkan (4) ?
+    reasmb: Apa arti mendapatkan (4) bagimu?
+    reasmb: Apa hubungannya menginginkan (4) dengan obrolan kita?
+  decomp: * @saya @sedih *
+    reasmb: Aku sedih mendengar bahwa kamu merasa (3) .
+    reasmb: Apakah datang ke sini akan membantumu tidak merasa (3) ?
+    reasmb: Aku yakin tidak menyenangkan merasa (3) .
+    reasmb: Bisakah kamu menjelaskan apa yang membuatmu merasa (3) ?
+    reasmb: Yaampun... :face_holding_back_tears:
+    reasmb: :cry:
+    reasmb: :sob:
+    reasmb: :smiling_face_with_tear: 
+  decomp: * @saya @senang *
+    reasmb: Bagaimana aku membantu membuatmu merasa (3) ?
+    reasmb: Apakah perawatanmu membuatmu merasa (3) ?
+    reasmb: Apa yang membuatmu merasa (3) saat ini?
+    reasmb: Bisakah kamu jelaskan mengapa tiba-tiba merasa (3) ?
+    reasmb: Syukurlahh, senang mendengar kamu merasa begitu. Bisa jelaskan lebih lanjut?
+  decomp: * @saya @tidak *
+    reasmb: Kamu benar-benar nggak (4) ?
+    reasmb: Mengapa kamu tidak (4) ?
+    reasmb: Apakah kamu ingin bisa (4) ?
+    reasmb: Apakah itu mengganggumu?
+
+key: aku
+  decomp: *
+   reasmb: goto saya
+
+key: kamu
+  decomp: * @kamu @ingat @pada *
+    reasmb: goto sama
+  decomp: * @kamu @adalah *
+    reasmb: Apa yang membuatmu berpikir aku (4) ?
+    reasmb: Apakah kamu senang percaya bahwa aku (4) ?
+    reasmb: Apakah kamu kadang berharap menjadi (4) ?
+    reasmb: Mungkin kamu ingin menjadi (4) .
+  decomp: * @kamu * @saya *
+    reasmb: Mengapa kamu pikir aku (3) kamu?
+    reasmb: Kamu suka berpikir aku (3) kamu -- bukan?
+    reasmb: Apa yang membuatmu berpikir aku (3) kamu?
+    reasmb: Sebentar, aku (3) kamu?
+    reasmb: Apakah kamu ingin percaya bahwa aku (3) kamu?
+    reasmb: Bagaimana jika aku memang (3) kamu -- apa artinya?
+  decomp: * @kamu *
+    reasmb: Kita sedang membicarakanmu -- bukan aku.
+    reasmb: Oh, aku (3) ?
+    reasmb: Kamu tidak benar-benar berbicara tentangku -- kan?
+    reasmb: Apa perasaanmu sekarang?
+
+key anda:
+  decomp: *
+    reasmb: goto kamu
+key: ya
+  decomp: * @ya *
+    reasmb: Kamu tampak sangat yakin.
+    reasmb: Kamu benar-benar yakin.
+    reasmb: Saya mengerti.
+
+key: iya
+  decomp: *
+    reasmb: goto ya
+
+key: tidak
+  decomp: * @tidak *
+    reasmb: Apakah kamu bilang itu hanya untuk merasa dirimu negatif?
+    reasmb: Kamu sedikit berpikir negatif.
+    reasmb: Kok gitu?
+    reasmb: Kenapa ' (2) ' ?
+
+key: nggak
+  decomp: *
+    reasmb: goto tidak
+
+key: ku
+  decomp: * ku *
+    reasmb: Mari kita bahas lebih lanjut tentang mengapa (1) (2) .
+    reasmb: Barusan kamu bilang (1) (2) .
+    reasmb: Tapi (1) (2) .
+    reasmb: Apakah itu ada hubungannya dengan fakta bahwa (1) (2) ?
+key: keluarga
+  decomp: * @keluarga *
+    reasmb: Ceritakan lebih lanjut tentang keluargamu.
+    reasmb: Siapa lagi di keluargamu yang (3) ?
+    reasmb: (2) mu?
+    reasmb: Apa lagi yang terlintas di pikiranmu ketika memikirkan (2) mu?
+
+key: dapat
+  decomp: * @dapatkah @kamu *
+    reasmb: Kamu percaya bahwa aku bisa (4) bukan?
+    reasmb: goto apa
+    reasmb: Kamu ingin aku bisa (4) .
+    reasmb: Mungkin kamu akan merasa lebih baik jika aku bisa (4) .
+    reasmb: Apa menurutmu aku bisa (4) ?
+  decomp: * @dapatkah @saya *
+    reasmb: Apakah menurutmu kamu harus bisa (2) ?
+    reasmb: Jika kamu bisa (2) , apa yang akan kamu lakukan?
+    reasmb: Saya tidak tahu -- dapatkah kamu (2) ?
+    reasmb: Apa yang membuatmu berpikir bahwa kamu bisa (2) ?
+
+key: apa
+  decomp: *
+    reasmb: Mengapa kamu bertanya?
+    reasmb: Apakah pertanyaan itu menarik bagimu?
+    reasmb: Apa yang sebenarnya ingin kamu ketahui?
+    reasmb: Apakah pertanyaan semacam itu sering ada di pikiranmu?
+    reasmb: Jawaban apa yang paling ingin kamu dengar?
+    reasmb: Apa pendapatmu?
+    reasmb: Apa yang terlintas di pikiranmu saat kamu bertanya itu?
+    reasmb: Apakah kamu pernah bertanya seperti itu sebelumnya?
+    reasmb: Apakah kamu pernah bertanya kepada orang lain?
+
+key: karena
+  decomp: * @karena *
+    reasmb: Apakah itu alasan sebenarnya?
+    reasmb: Apakah tidak ada alasan lain yang terlintas di pikiranmu?
+    reasmb: Apakah alasan itu menjelaskan hal lain?
+    reasmb: Alasan lain apa yang mungkin ada?
+
+key: karna
+  decomp: * karna *
+    reasmb: goto karena
+
+key: mengapa
+  decomp: * @mengapa @kamu @tidak *
+    reasmb: Apakah kamu percaya bahwa aku nggak (5) ?
+    reasmb: Mungkin aku akan (5) pada waktunya.
+    reasmb: Haruskah kamu (5) sendiri?
+    reasmb: Kamu ingin aku (5) ?
+    reasmb: goto apa
+  decomp: * @mengapa @saya @tidak @dapatkah *
+    reasmb: Apakah kamu pikir kamu harus bisa (6) ?
+    reasmb: Apakah kamu ingin bisa (6) ?
+    reasmb: Apakah kamu percaya ini akan membantumu untuk (6) ?
+    reasmb: Apakah kamu tahu mengapa kamu tidak bisa (6) ?
+    reasmb: goto apa
+  decomp: *
+    reasmb: goto apa
+
+key: kenapa
+  decomp: *
+    reasmb: goto apa
+
+key: semua 2
+  decomp: * @semua @orang *
+    reasmb: Seriusan, (2) (3) ?
+    reasmb: Tentu saja tidak (2) .
+    reasmb: Bisakah kamu memikirkan seseorang secara khusus?
+    reasmb: Siapa, misalnya?
+    reasmb: Apakah kamu memikirkan seseorang yang sangat istimewa?
+    reasmb: Siapa, boleh aku tanya?
+    reasmb: Seseorang yang spesial mungkin?
+    reasmb: Kamu pasti memikirkan seseorang secara khusus, bukan?
+    reasmb: Siapa yang kamu pikir sedang kamu bicarakan?
+
+key: ada 2
+  decomp: * @tidak ada *
+    reasmb: Hah, (2) (3) ?
+
+
+key: selalu 1
+  decomp: *
+    reasmb: Bisakah kamu memikirkan contoh spesifik?
+    reasmb: Kapan?
+    reasmb: Insiden apa yang kamu pikirkan?
+    reasmb: Benarkah, selalu?
+
+key: sering 1
+  decomp: *
+    reasmb: goto selalu
+
+key: seringkali 1
+  decomp: *
+    reasmb: goto selalu
+
+key: sama 10
+  decomp: *
+    reasmb: Dalam hal apa?
+    reasmb: Kesamaan apa yang kamu lihat?
+    reasmb: Apa yang disarankan oleh kesamaan itu kepadamu?
+    reasmb: Hubungan apa lagi yang kamu lihat?
+    reasmb: Menurutmu, apa arti dari kesamaan itu?
+    reasmb: Apa hubungannya, menurutmu?
+    reasmb: Mungkinkah ada hubungan?
+    reasmb: Bagaimana?
+
+key: seperti 10
+  decomp: *
+    reasmb: goto sama

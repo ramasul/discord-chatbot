@@ -105,7 +105,7 @@ class Eliza(discord.Client):
             for line in file:
                 if not line.strip():
                     continue
-                tag, content = [part.strip() for part in line.split(':')]
+                tag, content = [part.strip() for part in line.split(':',1)]
                 if tag == 'initial':
                     self.initials.append(content)
                 elif tag == 'final':
@@ -243,7 +243,7 @@ def main():
     intents = discord.Intents.default()
     intents.message_content = True 
     eliza = Eliza(intents=intents)
-    eliza.load('doctor.txt')
+    eliza.load('skrip-eliza.txt')
     eliza.run(token)
 
 if __name__ == '__main__':
