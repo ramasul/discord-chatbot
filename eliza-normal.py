@@ -43,7 +43,7 @@ class Eliza:
             for line in file:
                 if not line.strip():
                     continue
-                tag, content = [part.strip() for part in line.split(':')]
+                tag, content = [part.strip() for part in line.split(':',1)]
                 if tag == 'initial':
                     self.initials.append(content)
                 elif tag == 'final':
