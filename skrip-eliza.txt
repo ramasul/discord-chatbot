@@ -1,4 +1,4 @@
-initial: Kamu nggak apa apa? Tolong certain aja kalau ada masalah.
+initial: Kamu nggak apa apa? Tolong ceritain aja kalau ada masalah.
 final: Okee, Makasih ya udah ngobrol denganku.
 quit: bye
 quit: selamat tinggal
