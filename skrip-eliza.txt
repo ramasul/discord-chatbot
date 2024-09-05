@@ -74,6 +74,10 @@ key: ingat 5
     reasmb: goto apa
     reasmb: Kamu menyebutkan (5) ?
 
+key: mengingat 5
+  decomp: *
+    reasmb: goto ingat
+
 key: jika 3
   decomp: * @jika *
     reasmb: Apakah menurutmu mungkin bahwa (3) ?
@@ -168,32 +172,32 @@ key: komputer 50
     reasmb: Apa pendapatmu tentang komputer?
 
 key: saya
-  decomp: * @saya @ingin *
-    reasmb: Apa arti (4) bagimu jika kamu mendapatkannya?
-    reasmb: Mengapa kamu menginginkan (4) ?
-    reasmb: Bagaimana jika kamu mendapatkan (4) dalam waktu dekat?
-    reasmb: Bagaimana jika kamu tidak pernah mendapatkan (4) ?
-    reasmb: Apa arti mendapatkan (4) bagimu?
-    reasmb: Apa hubungannya menginginkan (4) dengan obrolan kita?
-  decomp: * @saya @sedih *
-    reasmb: Aku sedih mendengar bahwa kamu merasa (3) .
-    reasmb: Apakah datang ke sini akan membantumu tidak merasa (3) ?
-    reasmb: Aku yakin tidak menyenangkan merasa (3) .
-    reasmb: Bisakah kamu menjelaskan apa yang membuatmu merasa (3) ?
+  decomp: * @saya * @ingin *
+    reasmb: Apa arti (5) bagimu jika kamu mendapatkannya?
+    reasmb: Mengapa kamu menginginkan (5) ?
+    reasmb: Bagaimana jika kamu mendapatkan (5) dalam waktu dekat?
+    reasmb: Bagaimana jika kamu tidak pernah mendapatkan (5) ?
+    reasmb: Apa arti mendapatkan (5) bagimu?
+    reasmb: Apa hubungannya menginginkan (5) dengan obrolan kita?
+  decomp: * @saya * @sedih *
+    reasmb: Aku sedih mendengar bahwa kamu merasa (4) .
+    reasmb: Apakah datang ke sini akan membantumu tidak merasa (4) ?
+    reasmb: Aku yakin tidak menyenangkan merasa (4) .
+    reasmb: Bisakah kamu menjelaskan apa yang membuatmu merasa (4) ?
     reasmb: Yaampun... :face_holding_back_tears:
     reasmb: :cry:
     reasmb: :sob:
     reasmb: :smiling_face_with_tear: 
-  decomp: * @saya @senang *
-    reasmb: Bagaimana aku membantu membuatmu merasa (3) ?
-    reasmb: Apakah perawatanmu membuatmu merasa (3) ?
-    reasmb: Apa yang membuatmu merasa (3) saat ini?
-    reasmb: Bisakah kamu jelaskan mengapa tiba-tiba merasa (3) ?
+  decomp: * @saya * @senang *
+    reasmb: Bagaimana aku membantu membuatmu merasa (4) ?
+    reasmb: Apakah perawatanmu membuatmu merasa (4) ?
+    reasmb: Apa yang membuatmu merasa (4) saat ini?
+    reasmb: Bisakah kamu jelaskan mengapa tiba-tiba merasa (4) ?
     reasmb: Syukurlahh, senang mendengar kamu merasa begitu. Bisa jelaskan lebih lanjut?
-  decomp: * @saya @tidak *
-    reasmb: Kamu benar-benar nggak (4) ?
-    reasmb: Mengapa kamu tidak (4) ?
-    reasmb: Apakah kamu ingin bisa (4) ?
+  decomp: * @saya * @tidak *
+    reasmb: Kamu benar-benar nggak (5) ?
+    reasmb: Mengapa kamu tidak (5) ?
+    reasmb: Apakah kamu ingin bisa (5) ?
     reasmb: Apakah itu mengganggumu?
 
 key: aku
@@ -265,11 +269,26 @@ key: dapat
     reasmb: Kamu ingin aku bisa (4) .
     reasmb: Mungkin kamu akan merasa lebih baik jika aku bisa (4) .
     reasmb: Apa menurutmu aku bisa (4) ?
+
+  decomp: * @kamu @dapatkah *
+    reasmb: Kamu percaya bahwa aku bisa (4) bukan?
+    reasmb: goto apa
+    reasmb: Kamu ingin aku bisa (4) .
+    reasmb: Mungkin kamu akan merasa lebih baik jika aku bisa (4) .
+    reasmb: Apa menurutmu aku bisa (4) ?
+
   decomp: * @dapatkah @saya *
     reasmb: Apakah menurutmu kamu harus bisa (2) ?
     reasmb: Jika kamu bisa (2) , apa yang akan kamu lakukan?
     reasmb: Saya tidak tahu -- dapatkah kamu (2) ?
     reasmb: Apa yang membuatmu berpikir bahwa kamu bisa (2) ?
+
+  decomp: * @saya @dapatkah *
+    reasmb: Apakah menurutmu kamu harus bisa (2) ?
+    reasmb: Jika kamu bisa (2) , apa yang akan kamu lakukan?
+    reasmb: Saya tidak tahu -- dapatkah kamu (2) ?
+    reasmb: Apa yang membuatmu berpikir bahwa kamu bisa (2) ?
+
 
 key: apa
   decomp: *
